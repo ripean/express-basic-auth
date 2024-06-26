@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "start": "nodemon src/index.ts",
-    "start:prod": "node dist/index.js",
+    "start:prod": "node public/index.js",
     "clean": "rm -rf dist",
     "typeorm": "ts-node -r tsconfig-paths/register ./node_modules/typeorm/cli.js"
   },
