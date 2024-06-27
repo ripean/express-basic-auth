@@ -2,10 +2,9 @@
   "name": "backend_chido",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "build": "tsc && node public/index.js",
-    "start": "node public/index.js"
+    "build": "tsc",
+    "start": "nodemon src/index.ts"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +16,8 @@
   "devDependencies": {
     "@types/dotenv": "^8.2.0",
     "@types/express": "^4.17.21",
+    "nodemon": "^3.1.4",
+    "ts-node": "^10.9.2",
     "typescript": "^5.5.2"
   }
 }
