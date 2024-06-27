@@ -12,19 +12,19 @@ export enum UserRole {
 
 @Entity()
 export default class User {
-  @PrimaryGeneratedColumn()
+  @PrimaryGeneratedColumn({ type: "int" })
   id: number;
 
-  @Column()
+  @Column({type: "text"})
   name: string;
 
-  @Column({ unique: true })
+  @Column({ type: "text",unique: true })
   email: string;
 
-  @Column({ nullable: true })
+  @Column({ type: "text", nullable: true })
   profilePic: string;
 
-  @Column()
+  @Column({type: "text"})
   password: string;
 
   @Column({ type: "enum", enum: UserStatus, default: UserStatus.ACTIVE })

@@ -106,6 +106,7 @@
     "skipLibCheck": true,                                 /* Skip type checking all .d.ts files. */
     "outDir": "./public",
     "experimentalDecorators": true,
-    "strictPropertyInitialization": false
+    "strictPropertyInitialization": false,
+    "emitDecoratorMetadata": true
   }
 }
