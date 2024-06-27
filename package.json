@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && node public/index.js",
     "start": "node public/index.js"
   },
   "keywords": [],
