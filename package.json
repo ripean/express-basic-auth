@@ -4,18 +4,26 @@
   "description": "",
   "scripts": {
     "build": "tsc",
-    "start": "nodemon src/index.ts"
+    "start": "nodemon src/index.ts",
+    "start:prod": "tsc && node public/index.js",
+    "deploy": "tsc && vercel",
+    "clean": "rmdir /S /Q public"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.4.5",
-    "express": "^4.19.2"
+    "env-var": "^7.5.0",
+    "express": "^4.19.2",
+    "pg": "^8.12.0",
+    "reflect-metadata": "^0.2.2",
+    "typeorm": "^0.3.20"
   },
   "devDependencies": {
     "@types/dotenv": "^8.2.0",
     "@types/express": "^4.17.21",
+    "@types/node": "^20.14.9",
     "nodemon": "^3.1.4",
     "ts-node": "^10.9.2",
     "typescript": "^5.5.2"
