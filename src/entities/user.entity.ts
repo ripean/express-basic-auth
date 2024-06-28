@@ -50,4 +50,12 @@ export default class User {
       role: this.role,
     };
   };
+
+  toAuth = (): Partial<User> => {
+    return {
+      id: this.id,
+      email: this.email,
+      role: this.role
+    }
+  }
 }
